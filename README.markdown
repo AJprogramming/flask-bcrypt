@@ -40,7 +40,7 @@ object back to here. Do so like this:
 Two primary hashing methods are now exposed by way of the bcrypt object. Use
 them like so:
 
-    pw_hash = bcrypt.generate_password_hash('hunter2')
+    pw_hash = bcrypt.generate_password_hash('hunter2').decode(‘utf-8’)
     bcrypt.check_password_hash(pw_hash, 'hunter2') # returns True
 
 ## Documentation
